@@ -3,7 +3,9 @@
 1. [Solução proposta](#solucao_proposta)
 
    1.1 [Análise do problema](#analise)
+
    1.2 [Análise do dataset](#dataset)
+
    1.3 [Solução](#solucao)
 
 2. [Resultados](#resultados)
@@ -20,9 +22,9 @@
 6. [Conclusao](#conclusao)
 
 
+<a name=solucao_proposta />
 
 ## 1. Solução proposta
-
 
 
 ### 1.1 Análise do problema
@@ -135,6 +137,8 @@ A solução proposta possui alguns pontos de melhorias:
 - **Informação hardcodada**: Algumas informações foram hardcodada no código. Uma melhor prática seria utilizar um arquivo de configuração separado (Ex: json), onde estas informações seriam armazenadas.
 - **Parâmetros de avaliação do modelo**: Outros parâmetros poderiam ser disponibilziados para melhor avaliação do modelo como por examplo: precision score , recall score e f1 score.
 - **Testes**: Incluir testes unitários para facilitar a integração de novas funcionalidades.
+
+<a name=conclusao />
 
 
 ## 6. Conclusão
