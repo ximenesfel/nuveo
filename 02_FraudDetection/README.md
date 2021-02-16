@@ -14,8 +14,11 @@
 
 4. [Rodar código](#codigo)
 
-   4.1 [Treinamento](#treinamento)
-   4.2 [Inferência](#inferencia)
+   4.1 [Instalação](#instalacao)
+
+   4.2 [Treinamento](#treinamento)
+
+   4.3 [Inferência](#inferencia)
 
 5. [Melhorias](#melhorias)
 
@@ -27,10 +30,14 @@
 ## 1. Solução proposta
 
 
+<a name=analise />
+
 ### 1.1 Análise do problema
 
 O desafio propõem o desenvolvimento de um modelo de classificação de assinaturas de uma pessoa, sendo que ela pode ser classificada como Genuine, Forged ou Diguised. A grande dificuldade deste desafio é a sugestão de utilizar para treinar o modelo as assinaturas da classe Reference que contém 9 amostras.
 
+
+<a name=dataset />
 
 ### 1.2 Análise do dataset
 
@@ -53,6 +60,7 @@ Como podemos ver existe um desequilíbrio na quantidade de imagens para a classe
 | Forged        | 104     |
 | Diguised      | 20      |
 
+<a name=solucao />
 
 ### 1.3 Solução
 
@@ -64,6 +72,7 @@ A solução proposta utiliza todas as imagens das classes disponiblizadas. Esta 
 - **Treino**: O modelo foi treinado utilizando as características obtidas das images.
 - **Avaliação do modelo**: Após o treino, a acurácia do modelo foi avaliada utilizando o dataset de teste que consiste em imagens que não foram utilizadas no treinamento.
 
+<a name=resultados />
 
 ## 2. Resultados
 
@@ -85,7 +94,7 @@ Abaixo exemplos da inferência do modelo:
 **Classe: Forged**
 ![Image of Yaktocat](./images/forged.png)
 
-
+<a name=proposta />
 
 ## 3. Propostas soluções (classe Reference)
 
@@ -95,7 +104,11 @@ Abaixo as propostas para resolver o desafio utilizando somente a classe Referenc
 
 - **Modelo treinado**: Retreinar um modelo que já foi treinado para realizar essa tarefa utilizando as imagens fornecidas da classe Reference. Desta forma, vamos utilziar a expertise do modelo para realizar a inferência das imagens. A quantidade de imagens fornecidas para treino será um desafio para que o modelo generalize satisfatoriamente. Caso o resultado não seja satisfatório, uma possibilidade é utilizar as imagens das classes Genuine e Reference disponibilizadas, desta forma vamos ter mais exemplos para o modelo treinar.
 
+<a name=codigo />
+
 ## 4. Rodar código
+
+<a name=instalacao />
 
 ### 4.1 Instalação
 
@@ -112,6 +125,7 @@ O código foi divido em dois arquivos disponibilizados na pasta `code`:
 - `model_training.py`: Arquivo utilizado para realizar o treinamento do modelo de classificação.
 - `model_inference.py`: Arquivo para rodar a inferência do modelo gerado.
 
+<a name=treinamento />
 
 ### 4.2 Treinamento
 
@@ -121,6 +135,8 @@ Para realizar o treinamento do modelo, rodar o seguinte comando:
 
 Após a finalização do treinamento, o modelo será gravado na pasta code com o nome `model.pkl`. Na tela será apresentada informaçãoes da matrix de confusão e acurácia do modelo.
 
+<a name=inferencia />
+
 ### 4.3 Inferência
 
 Para realizar a inferência do modelo, rodar o seguinte comando:
@@ -128,6 +144,8 @@ Para realizar a inferência do modelo, rodar o seguinte comando:
 `python3 model_inference.py -i 'path_to_image_file'`
 
 A classe inferida será apresentada na tela, assim como a imagem com a classe discriminada.
+
+<a name=melhorias />
 
 ## 5. Melhorias
 
@@ -139,7 +157,6 @@ A solução proposta possui alguns pontos de melhorias:
 - **Testes**: Incluir testes unitários para facilitar a integração de novas funcionalidades.
 
 <a name=conclusao />
-
 
 ## 6. Conclusão
 

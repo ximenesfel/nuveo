@@ -3,7 +3,7 @@
 
 1. [Solução proposta](#solucao_proposta)
 
-   1.1 [Análise do problema](#analise)
+   1.1 [Análise do problema](#)
 
    1.2 [Análise do dataset](#dataset)
 
@@ -11,21 +11,28 @@
 
 2. [Resultados](#resultados)
 
-3. [Melhorias](#melhorias)
+3. [Rodar código](#codigo)
 
-4. [Rodar código](#codigo)
+   3.1 [Instação](#instacao)
+
+   3.2 [Rodar algoritmo](#algoritmo)
+
+4. [Melhorias](#melhorias)
 
 5. [Conclusão](#conclusao)
 
 
+<a name=solucao_proposta />
+
 ## 1. Solução proposta
 
-
+<a name=analise />
 
 ### 1.1 Análise do problema
 
 O desafio proproem o desenvolvimento de um algoritmo de processamento de imagem para a manipulação de imagens com ruido no background, com o objetivo de realizar a leitura do texto presente em cada imagem. O algoritmo desenvolvido tem que ser robusto o suficiente para extrair todos os tipos de ruído e possibilitar a leitura do texto. Somente a imagem ruidosa está disponível, a referência de como deveria ser o output correto não foi forcendida.
 
+<a name=dataset />
 
 ### 1.2 Análise do dataset
 
@@ -36,6 +43,7 @@ O dataset consiste em imagens com alguns padrões de ruino no background. Observ
 ![Image of Yaktocat](./images/8.png)
 ![Image of Yaktocat](./images/11.png)
 
+<a name=solucao />
 
 ### 1.3 Solução
 
@@ -47,6 +55,7 @@ A solução proposta para resolver este desafio foi aplicar algoritmos de proces
 
 * **Leitura do texto**: Para realizar a leitura dos textos foi utilizado o pytesseract que facilita o uso do Tesseract que é uma biblioteca utilizada para a leitura de caracteres. 
 
+<a name=resultados />
 
 ## 2. Resultados
 
@@ -91,7 +100,11 @@ than dark lines whenever the handwritten tez1
 evertheless, other practical issues must be
 The best way to print these light rectangles
 
+<a name=codigo />
+
 ## 3. Rodar código
+
+<a name=instacao />
 
 ### 3.1 Instalação
 
@@ -105,6 +118,7 @@ Neste projeto foi utilziado `docker` e `docker-compose` para facilitar a instaç
 
 O código foi implementado no arquivo disponibilziado na pasta `code` chamado `process_image.py`.
 
+<a name=algoritmo />
 
 ### 3.2 Rodar algoritmo
 
@@ -114,6 +128,7 @@ Para rodar o algoritmo de processamento das imagem:
 
 Após a finalização do algoritmo, as imagens e os respectivos textos lidos serão disponibilizados na pasta `output`.
 
+<a name=melhorias />
 
 ## 4. Melhorias
 
@@ -126,6 +141,7 @@ A solução proposta possui alguns pontos de melhorias:
 - **Apresentação texto lido**: Em algumas respostas do texto lido da imagem aparecem alguns caracteres especiais. Ele foram deixados para melhor vizualização da eficiência do algoritmo de leitura, porém idealmente seria melhor removê-los.
 - **Testes**: Incluir testes unitários para facilitar a integração de novas funcionalidades.
 
+<a name=conclusao />
 
 ## 5. Conclusão
 
