@@ -4,3 +4,5 @@ RUN apt update && \
     apt install -y vim git ffmpeg libsm6 libxext6
 
 RUN pip install opencv-python numpy opencv-contrib-python scikit-learn scikit-image imutils seaborn
+
+WORKDIR /root

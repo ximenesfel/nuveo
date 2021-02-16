@@ -13,7 +13,7 @@
 
 3. [Rodar código](#codigo)
 
-   3.1 [Instação](#instacao)
+   3.1 [Instalação](#instacao)
 
    3.2 [Rodar algoritmo](#algoritmo)
 
