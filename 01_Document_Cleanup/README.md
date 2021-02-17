@@ -30,7 +30,7 @@
 
 ### 1.1 Análise do problema
 
-O desafio proproem o desenvolvimento de um algoritmo de processamento de imagem para a manipulação de imagens com ruido no background, com o objetivo de realizar a leitura do texto presente em cada imagem. O algoritmo desenvolvido tem que ser robusto o suficiente para extrair todos os tipos de ruído e possibilitar a leitura do texto. Somente a imagem ruidosa está disponível, a referência de como deveria ser o output correto não foi forcendida.
+O desafio propôrem o desenvolvimento de um algoritmo de processamento de imagem para a manipulação de imagens com ruido no background, com o objetivo de realizar a leitura do texto presente em cada imagem. O algoritmo desenvolvido tem que ser robusto o suficiente para extrair todos os tipos de ruído e possibilitar a leitura do texto. Somente a imagem ruidosa está disponível, a referência de como deveria ser o output correto não foi fornecida.
 
 <a name=dataset />
 
@@ -49,9 +49,9 @@ O dataset consiste em imagens com alguns padrões de ruino no background. Observ
 
 A solução proposta para resolver este desafio foi aplicar algoritmos de processamento de imagem para viabilizar a leitura do texto. O desenvolvimento foi dividido nas seguintes tarefas:
 
-* **Remover o ruído do background**: Para remover o ruído do background foi utlizado um boramento médio dos pixels da imagem para evidenciar o ruido do background e posteriormente subtraido o ruido da imagem original. Desta forma, obtemos uma imagem com menor interferência do ruido.
+* **Remover o ruído do background**: Para remover o ruído do background foi utlizado um boramento médio dos pixels da imagem para evidenciar o ruido do background e posteriormente subtrair o ruido da imagem original. Desta forma, obtemos uma imagem com menor interferência do ruido.
 
-* **Alinhamento do texto na horizontal**: A maioria dos textos fornecidos nas imagens não estão na horizontal, o que dificulta a leitura do texto para os algoritmos de visãoo computacional. Com o intuito de facilitar a leitura, os textos foram rotacionados para ficarem na horizontal. Para realziar o rotacionameno, foi utilizado o algoritmo de Hough Line Transform que permite identificar retas na imagem. Se traçarmos uma reta na linha de cada texto da imagem será possível indentificar a inclinação do texto e rotacionar para ficar na posição horizontal. Desta forma foi aplicado a Hough Line Transform na imagem e após calcular a inclinação média de todas as retas do texto, foi possível obter o angulo do texto e aplicar uma rotação no mesmo para ficar na horizontal.
+* **Alinhamento do texto na horizontal**: A maioria dos textos fornecidos nas imagens não estão na horizontal, o que dificulta a leitura do texto para os algoritmos de visãoo computacional. Com o intuito de facilitar a leitura, os textos foram rotacionados para ficarem na horizontal. Para realziar o rotacionameno, foi utilizado o algoritmo de Hough Line Transform que permite identificar retas na imagem. Se traçarmos uma reta na linha de cada texto da imagem será possível indentificar a inclinação do texto e rotacionar para ficar na posição horizontal. Desta forma foi aplicado a Hough Line Transform na imagem e após calcular a inclinação média de todas as retas do texto, foi possível obter o ângulo do texto e aplicar uma rotação no mesmo para ficar na horizontal.
 
 * **Leitura do texto**: Para realizar a leitura dos textos foi utilizado o pytesseract que facilita o uso do Tesseract que é uma biblioteca utilizada para a leitura de caracteres. 
 

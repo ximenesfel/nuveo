@@ -22,7 +22,7 @@
 
 5. [Melhorias](#melhorias)
 
-6. [Conclusao](#conclusao)
+6. [Conclusão](#conclusao)
 
 
 <a name=solucao_proposta />
@@ -50,7 +50,7 @@ O dataset fornecido possui a seguinte configuração :
 | Forged        | 104     |
 | Diguised      | 20      |
 
-Como podemos ver existe um desequilíbrio na quantidade de imagens para a classe Diguised e reference em relação as outras classes (Genuine e Forged). 
+Como podemos ver existe um desequilíbrio na quantidade de imagens para a classe Diguised e Reference em relação as outras classes (Genuine e Forged). 
 
 **Observação**: No enunciado do desafio foi solicitado para a saída do modelo considere as três classes: Genuine, Forged e Diguised. Como as classes Genuine e Reference representam assinaturas verdadeiras da pessoa, foram consideras neste desafio como pertencentes a classe Genuine. Desta forma a configuração final do dataset ficou da seguinte forma:
 
@@ -64,10 +64,10 @@ Como podemos ver existe um desequilíbrio na quantidade de imagens para a classe
 
 ### 1.3 Solução
 
-A solução proposta utiliza todas as imagens das classes disponiblizadas. Esta solução foi adotada devido a melhor performance apresentada. Um esforço foi realizado para apresentar uma solução que somente utilize a classe reference para o treino, porém não uma performance satisfatória. Na seção Propostas soluções (classe Reference) foram apresentada algumas propostas.  O desenvolvimento foi dividido nas seguintes tarefas:
+A solução proposta utiliza todas as imagens das classes disponiblizadas. Esta solução foi adotada devido a melhor performance apresentada. Um esforço foi realizado para apresentar uma solução que somente utilize a classe Reference para o treino, porém não obtive uma solução satisfatória que atenda o prazo de realização do desafio. Na seção Propostas soluções (classe Reference) foram apresentada algumas propostas.  O desenvolvimento foi dividido nas seguintes tarefas:
 
 - **Separação do dataset**: A separação adotada do dataset foi 80% para treino e 20% para teste.
-- **Definição da quantificação da imagem**: Para treinarmos um algoritmo de classificação temos que forcener dados que ajudem a classificar corretamente as classes. Para descrever a imagem para o algoritmo de classfificação foi utilizado o descritor de image HOG (Histogram of Oriented Gradients), que extrai características da imagem.  
+- **Definição da quantificação da imagem**: Para treinarmos um algoritmo de classificação temos que fornecer dados que ajudem a classificar corretamente as classes. Para descrever a imagem para o algoritmo de classfificação foi utilizado o descritor de image HOG (Histogram of Oriented Gradients), que extrai características da imagem.  
 - **Definição do algoritmo de classificação**: O algoritmo de classificação utilizado foi o Random Forest, que apresentou o melhor resultado para a aplicação.
 - **Treino**: O modelo foi treinado utilizando as características obtidas das images.
 - **Avaliação do modelo**: Após o treino, a acurácia do modelo foi avaliada utilizando o dataset de teste que consiste em imagens que não foram utilizadas no treinamento.
