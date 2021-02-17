@@ -3,7 +3,7 @@
 
 1. [Solução proposta](#solucao_proposta)
 
-   1.1 [Análise do problema](#)
+   1.1 [Análise do problema](#analise)
 
    1.2 [Análise do dataset](#dataset)
 
